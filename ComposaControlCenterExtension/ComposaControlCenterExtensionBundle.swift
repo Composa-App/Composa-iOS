@@ -9,8 +9,8 @@ import WidgetKit
 import SwiftUI
 
 @main
-struct AVCamControlCenterExtensionBundle: WidgetBundle {
+struct ComposaControlCenterExtensionBundle: WidgetBundle {
     var body: some Widget {
-        AVCamControlCenterExtension()
+        ComposaControlCenterExtension()
     }
 }

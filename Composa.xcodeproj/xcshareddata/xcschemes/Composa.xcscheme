@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C4F82C98285ADDA2005D427A"
-               BuildableName = "AVCam.app"
-               BlueprintName = "AVCam"
+               BuildableName = "Composa.app"
+               BlueprintName = "Composa"
                ReferencedContainer = "container:Composa.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -56,8 +56,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C4F82C98285ADDA2005D427A"
-            BuildableName = "AVCam.app"
-            BlueprintName = "AVCam"
+            BuildableName = "Composa.app"
+            BlueprintName = "Composa"
             ReferencedContainer = "container:Composa.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -80,8 +80,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C4F82C98285ADDA2005D427A"
-            BuildableName = "AVCam.app"
-            BlueprintName = "AVCam"
+            BuildableName = "Composa.app"
+            BlueprintName = "Composa"
             ReferencedContainer = "container:Composa.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

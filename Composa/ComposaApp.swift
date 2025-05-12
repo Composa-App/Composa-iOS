@@ -20,21 +20,9 @@ struct AVCamApp: App {
     
     var body: some Scene {
         WindowGroup {
-            CameraView(camera: camera)
+            CameraDeviceListView()
                 .statusBarHidden(true)
-                .task {
-                    // Start the capture pipeline.
-                    await camera.start()
-                }
-                // Monitor the scene phase. Synchronize the persistent state when
-                // the camera is running and the app becomes active.
-                .onChange(of: scenePhase) { _, newPhase in
-                    guard camera.status == .running, newPhase == .active else { return }
-                    Task { @MainActor in
-                        await camera.syncState()
-                    }
-                }
-        }
+        } 
     }
 }
 

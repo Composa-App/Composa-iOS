@@ -11,7 +11,7 @@ import SwiftUI
 import os
 
 @main
-struct AVCamCaptureExtension: LockedCameraCaptureExtension {
+struct ComposaCaptureExtension: LockedCameraCaptureExtension {
     
     @State private var camera = CameraModel()
     

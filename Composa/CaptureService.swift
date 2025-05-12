@@ -1,5 +1,5 @@
 /*
-See the LICENSE.txt file for this sample’s licensing information.
+See the LICENSE.txt file for this sample's licensing information.
 
 Abstract:
 An object that manages a capture session and its inputs and outputs.
@@ -35,6 +35,9 @@ actor CaptureService {
     
     // An object that manages the app's video capture behavior.
     private let movieCapture = MovieCapture()
+    
+    // Add FrameCaptureService
+    private let frameCaptureService = FrameCaptureService()
     
     // An internal collection of output services.
     private var outputServices: [any OutputService] { [photoCapture, movieCapture] }
@@ -72,6 +75,9 @@ actor CaptureService {
         sessionQueue.asUnownedSerialExecutor()
     }
     
+    // Add a new property to track selected device
+    private var selectedDevice: AVCaptureDevice?
+    
     init() {
         // Create a source object to connect the preview view with the capture session.
         previewSource = DefaultPreviewSource(session: captureSession)
@@ -96,6 +102,7 @@ actor CaptureService {
     }
     
     // MARK: - Capture session life cycle
+    // Original sample-compatible method for persistent state
     func start(with state: CameraState) async throws {
         // Set initial operating state.
         captureMode = state.captureMode
@@ -106,6 +113,67 @@ actor CaptureService {
         // Configure the session and start it.
         try setUpSession()
         captureSession.startRunning()
+    }
+
+    // New method for user-selected device
+  func startWith(device: AVCaptureDevice, state: CameraState) async throws {
+    // Set initial operating state.
+    captureMode = state.captureMode
+    isHDRVideoEnabled = state.isVideoHDREnabled
+    selectedDevice = device
+    
+        // Exit early if not authorized.
+        guard await isAuthorized else { return }
+        
+        // Stop session if running
+        if captureSession.isRunning {
+            captureSession.stopRunning()
+        }
+        // Remove all inputs and outputs
+        for input in captureSession.inputs {
+            captureSession.removeInput(input)
+        }
+        for output in captureSession.outputs {
+            captureSession.removeOutput(output)
+        }
+        isSetUp = false
+        // Configure the session and start it with the selected device
+        try setUpSession(with: device)
+        captureSession.startRunning()
+    }
+
+    private func setUpSession(with device: AVCaptureDevice) throws {
+        // Return early if already set up.
+        guard !isSetUp else { return }
+
+        // Observe internal state and notifications.
+        observeOutputServices()
+        observeNotifications()
+        observeCaptureControlsState()
+
+        // Add selected camera and default mic as inputs
+        activeVideoInput = try addInput(for: device)
+        let defaultMic = try deviceLookup.defaultMic
+        try addInput(for: defaultMic)
+
+        // Configure the session preset based on the current capture mode.
+        captureSession.sessionPreset = captureMode == .photo ? .photo : .high
+        // Add the photo capture output as the default output type.
+        try addOutput(photoCapture.output)
+        if captureMode == .video {
+            try addOutput(movieCapture.output)
+            setHDRVideoEnabled(isHDRVideoEnabled)
+        }
+
+        // Configure controls to use with the Camera Control.
+        configureControls(for: device)
+        // Monitor the system-preferred camera state.
+        monitorSystemPreferredCamera()
+        // Configure a rotation coordinator for the selected video device.
+        createRotationCoordinator(for: device)
+        // Observe changes to the selected camera's subject area.
+        observeSubjectAreaChanges(of: device)
+        isSetUp = true
     }
     
     // MARK: - Capture setup
@@ -149,6 +217,9 @@ actor CaptureService {
             observeSubjectAreaChanges(of: defaultCamera)
             // Update the service's advertised capabilities.
             updateCaptureCapabilities()
+            
+            // Add frame capture output
+            frameCaptureService.addToSession(captureSession)
             
             isSetUp = true
         } catch {
@@ -311,6 +382,11 @@ actor CaptureService {
     }
     
     // Changes the device the service uses for video capture.
+    func selectVideoDevice(_ device: AVCaptureDevice) async {
+        //await sessionQueue.run {
+            self.changeCaptureDevice(to: device)
+        //}
+    }
     private func changeCaptureDevice(to device: AVCaptureDevice) {
         // The service must have a valid video input prior to calling this method.
         guard let currentInput = activeVideoInput else { fatalError() }
@@ -348,8 +424,8 @@ actor CaptureService {
         Task {
             // An object monitors changes to system-preferred camera (SPC) value.
             for await camera in systemPreferredCamera.changes {
-                // If the SPC isn't the currently selected camera, attempt to change to that device.
-                if let camera, currentDevice != camera {
+                // Only switch if we're not in monitor mode (no selected device)
+                if let camera, selectedDevice == nil, currentDevice != camera {
                     logger.debug("Switching camera selection to the system-preferred camera.")
                     changeCaptureDevice(to: camera)
                 }
@@ -565,6 +641,26 @@ actor CaptureService {
                 }
             }
         }
+        
+        Task {
+            for await notification in NotificationCenter.default.notifications(named: AVCaptureDevice.wasDisconnectedNotification) {
+                if let device = notification.object as? AVCaptureDevice,
+                   device == selectedDevice {
+                    // Stop the session when selected device disconnects
+                    captureSession.stopRunning()
+                    isInterrupted = true
+                }
+            }
+        }
+    }
+    
+    // Add methods to control frame capture
+    func startFrameCapture() {
+        frameCaptureService.startFrameCapture()
+    }
+    
+    func stopFrameCapture() {
+        frameCaptureService.stopFrameCapture()
     }
 }
 
