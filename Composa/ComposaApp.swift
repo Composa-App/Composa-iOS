@@ -20,8 +20,9 @@ struct AVCamApp: App {
     
     var body: some Scene {
         WindowGroup {
-            CameraDeviceListView()
-                .statusBarHidden(true)
+          CameraConnectView(cameraModel: camera)
+//            CameraDeviceListView()
+              .statusBarHidden(true)
         } 
     }
 }

@@ -58,6 +58,18 @@ final class CameraModel: Camera {
     /// Persistent state shared between the app and capture extension.
     private var cameraState = CameraState()
     
+    /// The list of available video capture devices (internal and external).
+    /*@Published*/ var devices: [AVCaptureDevice] = []
+    
+    /// The currently selected video capture device.
+    /*@Published*/ var selectedDevice: AVCaptureDevice?
+    
+    /// Whether the device selection modal should be shown (for multiple devices).
+   /* @Published*/ var showDeviceSelectionModal: Bool = false
+    
+    /// Utility for querying available cameras and microphones.
+    private let deviceLookup = DeviceLookup()
+    
     init() {
         //
     }
@@ -263,6 +275,40 @@ final class CameraModel: Camera {
                     status = .disconnected
                 }
             }
+        }
+    }
+    
+    /// Discovers available video capture devices and updates the model's state.
+    /// - Populates the `devices` array.
+    /// - If no devices are found, sets status to `.failed`.
+    /// - If one device is found, selects it and sets status to `.running`.
+    /// - If multiple devices are found, triggers the device selection modal.
+    func discoverDevices() {
+        // Optionally, set a loading state here if you want to show a spinner.
+        DispatchQueue.global(qos: .userInitiated).async {
+            let foundDevices = self.deviceLookup.cameras
+            DispatchQueue.main.async {
+                self.devices = foundDevices
+                if foundDevices.isEmpty {
+                    self.status = .failed // Or a custom .noDevices if you add it
+                } else if foundDevices.count == 1 {
+                    self.selectedDevice = foundDevices.first
+                    self.status = .running
+                } else {
+                    self.showDeviceSelectionModal = true
+                }
+            }
+        }
+    }
+
+    /// Handles user selection of a device from the modal.
+    /// - Parameter device: The device selected by the user.
+    func selectDevice(_ device: AVCaptureDevice) {
+        self.selectedDevice = device
+        self.showDeviceSelectionModal = false
+        self.status = .running
+        Task {
+            await startWith(device: device)
         }
     }
 }

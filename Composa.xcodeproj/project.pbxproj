@@ -11,6 +11,8 @@
 		772EDE452DB7681200BEE3ED /* CameraDeviceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772EDE432DB7681200BEE3ED /* CameraDeviceListView.swift */; };
 		772EDE472DB7682B00BEE3ED /* CameraMonitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772EDE462DB7682B00BEE3ED /* CameraMonitorView.swift */; };
 		772EDE482DB7682B00BEE3ED /* CameraMonitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772EDE462DB7682B00BEE3ED /* CameraMonitorView.swift */; };
+		774A432B2DD1B2BE0085153C /* CameraConnectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774A432A2DD1B2BE0085153C /* CameraConnectView.swift */; };
+		774A432C2DD1B2BE0085153C /* CameraConnectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774A432A2DD1B2BE0085153C /* CameraConnectView.swift */; };
 		775B64032DB526AD00E60CF4 /* ComposaCaptureExtension.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = C47C99BA2CA1C6BB00B5338B /* ComposaCaptureExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		775B64062DB526AD00E60CF4 /* ComposaControlCenterExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C4C6E1FA2CA1CF250081A8EA /* ComposaControlCenterExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		775B64522DB5272500E60CF4 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77EE99AD2DB5230D00F35299 /* WatchConnectivity.framework */; };
@@ -156,6 +158,7 @@
 		7710E8B4E5AEBAFE7C73EBAA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		772EDE432DB7681200BEE3ED /* CameraDeviceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraDeviceListView.swift; sourceTree = "<group>"; };
 		772EDE462DB7682B00BEE3ED /* CameraMonitorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraMonitorView.swift; sourceTree = "<group>"; };
+		774A432A2DD1B2BE0085153C /* CameraConnectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraConnectView.swift; sourceTree = "<group>"; };
 		775B64252DB526E600E60CF4 /* ComposaRemoteApp Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ComposaRemoteApp Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		775B64342DB526E800E60CF4 /* ComposaRemoteApp Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ComposaRemoteApp Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		775B643E2DB526E800E60CF4 /* ComposaRemoteApp Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ComposaRemoteApp Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -443,6 +446,7 @@
 				77EE99A82DB5206100F35299 /* Info.plist */,
 				C4F82C9C285ADDA2005D427A /* ComposaApp.swift */,
 				772EDE432DB7681200BEE3ED /* CameraDeviceListView.swift */,
+				774A432A2DD1B2BE0085153C /* CameraConnectView.swift */,
 				772EDE462DB7682B00BEE3ED /* CameraMonitorView.swift */,
 				C48091832BD584AD00753C4A /* CameraModel.swift */,
 				C4F82CCB285AE206005D427A /* CaptureService.swift */,
@@ -762,6 +766,7 @@
 				C4C5532A2CA1D5A3005D940C /* DeviceLookup.swift in Sources */,
 				C4C5532B2CA1D5A3005D940C /* CameraModel.swift in Sources */,
 				C4C5532C2CA1D5A3005D940C /* ThumbnailButton.swift in Sources */,
+				774A432B2DD1B2BE0085153C /* CameraConnectView.swift in Sources */,
 				C4C5532D2CA1D5A3005D940C /* SwitchCameraButton.swift in Sources */,
 				C4C5532E2CA1D5A3005D940C /* MediaLibrary.swift in Sources */,
 				C4C5532F2CA1D5A3005D940C /* ViewExtensions.swift in Sources */,
@@ -810,6 +815,7 @@
 				C424961F2889CDC400C05256 /* CaptureModeView.swift in Sources */,
 				C442A31128BEAEA70029B42B /* MediaLibrary.swift in Sources */,
 				C4CB95D02BF06EA6000CF8C7 /* CameraUI.swift in Sources */,
+				774A432C2DD1B2BE0085153C /* CameraConnectView.swift in Sources */,
 				C4C686232892E33E0038EDE1 /* RecordingTimeView.swift in Sources */,
 				C4DFD84428C3E173005B74F0 /* DataTypes.swift in Sources */,
 				C4EA0DC02891EFC20085A584 /* MovieCapture.swift in Sources */,

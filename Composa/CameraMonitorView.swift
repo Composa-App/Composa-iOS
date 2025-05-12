@@ -3,8 +3,7 @@ import AVFoundation
 
 /// A monitoring-focused camera preview view for the selected camera device.
 struct CameraMonitorView: View {
-    let selectedDevice: AVCaptureDevice
-    @State private var cameraModel = CameraModel()
+    @Bindable var cameraModel: CameraModel
     @Environment(\.dismiss) private var dismiss
     
     var body: some View {
@@ -34,12 +33,13 @@ struct CameraMonitorView: View {
             }
         }
         .navigationBarBackButtonHidden(true)
-        .navigationTitle(selectedDevice.localizedName)
+        .navigationTitle(cameraModel.selectedDevice?.localizedName ?? "Camera")
         .navigationBarTitleDisplayMode(.inline)
         .onAppear {
-            Task {
-                await cameraModel.startWith(device: selectedDevice)
-                //cameraModel.startFrameCapture() // Start frame capture for Watch preview
+            if let device = cameraModel.selectedDevice {
+                Task {
+                    await cameraModel.startWith(device: device)
+                }
             }
         }
         .onDisappear {
