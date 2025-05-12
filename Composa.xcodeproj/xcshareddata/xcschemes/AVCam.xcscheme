@@ -17,7 +17,7 @@
                BlueprintIdentifier = "C4F82C98285ADDA2005D427A"
                BuildableName = "AVCam.app"
                BlueprintName = "AVCam"
-               ReferencedContainer = "container:AVCam.xcodeproj">
+               ReferencedContainer = "container:Composa.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -30,14 +30,13 @@
       <Testables>
          <TestableReference
             skipped = "NO"
-            parallelizable = "YES"
-            useTestSelectionWhitelist = "NO">
+            parallelizable = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C4A11A1528A447FA00670F08"
                BuildableName = "AVCamTests.xctest"
                BlueprintName = "AVCamTests"
-               ReferencedContainer = "container:AVCam.xcodeproj">
+               ReferencedContainer = "container:Composa.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -59,7 +58,7 @@
             BlueprintIdentifier = "C4F82C98285ADDA2005D427A"
             BuildableName = "AVCam.app"
             BlueprintName = "AVCam"
-            ReferencedContainer = "container:AVCam.xcodeproj">
+            ReferencedContainer = "container:Composa.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <EnvironmentVariables>
@@ -83,7 +82,7 @@
             BlueprintIdentifier = "C4F82C98285ADDA2005D427A"
             BuildableName = "AVCam.app"
             BlueprintName = "AVCam"
-            ReferencedContainer = "container:AVCam.xcodeproj">
+            ReferencedContainer = "container:Composa.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

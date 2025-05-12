@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		772EDE442DB7681200BEE3ED /* CameraDeviceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772EDE432DB7681200BEE3ED /* CameraDeviceListView.swift */; };
+		772EDE452DB7681200BEE3ED /* CameraDeviceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772EDE432DB7681200BEE3ED /* CameraDeviceListView.swift */; };
+		772EDE472DB7682B00BEE3ED /* CameraMonitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772EDE462DB7682B00BEE3ED /* CameraMonitorView.swift */; };
+		772EDE482DB7682B00BEE3ED /* CameraMonitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772EDE462DB7682B00BEE3ED /* CameraMonitorView.swift */; };
+		775B64032DB526AD00E60CF4 /* AVCamCaptureExtension.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = C47C99BA2CA1C6BB00B5338B /* AVCamCaptureExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		775B64062DB526AD00E60CF4 /* AVCamControlCenterExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C4C6E1FA2CA1CF250081A8EA /* AVCamControlCenterExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		775B64522DB5272500E60CF4 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77EE99AD2DB5230D00F35299 /* WatchConnectivity.framework */; };
+		775B64532DB5274100E60CF4 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77EE99AB2DB5228C00F35299 /* WatchConnectivity.framework */; };
+		77D6D82D2DB529F1006B0BF6 /* FrameCaptureService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D6D82C2DB529F1006B0BF6 /* FrameCaptureService.swift */; };
+		77D6D82E2DB529F1006B0BF6 /* FrameCaptureService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D6D82C2DB529F1006B0BF6 /* FrameCaptureService.swift */; };
+		77EE99992DB51C6A00F35299 /* (null) in Embed Watch Content */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C400F46128DFD8AC00861093 /* ThumbnailButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C400F45E28DFD8AC00861093 /* ThumbnailButton.swift */; };
 		C400F46328DFDAB700861093 /* FoundationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C400F46228DFDAB700861093 /* FoundationExtensions.swift */; };
 		C40A95B92CC9A91A00A02AF1 /* CameraState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A73C9F2CC0748800C2FA84 /* CameraState.swift */; };
@@ -17,7 +28,6 @@
 		C472D846285BBFA60082244A /* DeviceLookup.swift in Sources */ = {isa = PBXBuildFile; fileRef = C472D845285BBFA60082244A /* DeviceLookup.swift */; };
 		C472D84F285BDFA60082244A /* MainToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C472D84D285BDFA60082244A /* MainToolbar.swift */; };
 		C475973128A71BEC00D1D029 /* CaptureButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C475973028A71BEC00D1D029 /* CaptureButton.swift */; };
-		C47C99C32CA1C6BB00B5338B /* AVCamCaptureExtension.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = C47C99BA2CA1C6BB00B5338B /* AVCamCaptureExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C48091852BD584AD00753C4A /* CameraModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48091832BD584AD00753C4A /* CameraModel.swift */; };
 		C480918B2BD59D7D00753C4A /* SPCObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48091892BD59D7D00753C4A /* SPCObserver.swift */; };
 		C4A349DF28BD4B700056FAAF /* SwitchCameraButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A349DE28BD4B700056FAAF /* SwitchCameraButton.swift */; };
@@ -53,7 +63,6 @@
 		C4C686232892E33E0038EDE1 /* RecordingTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C686222892E33E0038EDE1 /* RecordingTimeView.swift */; };
 		C4C6E1FD2CA1CF250081A8EA /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4C6E1FC2CA1CF250081A8EA /* WidgetKit.framework */; };
 		C4C6E1FF2CA1CF250081A8EA /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4C6E1FE2CA1CF250081A8EA /* SwiftUI.framework */; };
-		C4C6E20A2CA1CF270081A8EA /* AVCamControlCenterExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C4C6E1FA2CA1CF250081A8EA /* AVCamControlCenterExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C4C6E2112CA1CF860081A8EA /* AVCamCaptureIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C6E2102CA1CF860081A8EA /* AVCamCaptureIntent.swift */; };
 		C4C6E2142CA1D01A0081A8EA /* AVCamCaptureIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C6E2102CA1CF860081A8EA /* AVCamCaptureIntent.swift */; };
 		C4C6E2152CA1D01A0081A8EA /* AVCamCaptureIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C6E2102CA1CF860081A8EA /* AVCamCaptureIntent.swift */; };
@@ -76,51 +85,85 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C47C99C12CA1C6BB00B5338B /* PBXContainerItemProxy */ = {
+		775B64042DB526AD00E60CF4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C4F82C91285ADDA2005D427A /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = C47C99B92CA1C6BB00B5338B;
 			remoteInfo = AVCamCaptureExtension;
 		};
-		C4C6E2082CA1CF270081A8EA /* PBXContainerItemProxy */ = {
+		775B64072DB526AD00E60CF4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C4F82C91285ADDA2005D427A /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = C4C6E1F92CA1CF250081A8EA;
-			remoteInfo = AVCamControlCenterExtensionExtension;
+			remoteInfo = AVCamControlCenterExtension;
+		};
+		775B64352DB526E800E60CF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4F82C91285ADDA2005D427A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 775B64242DB526E600E60CF4;
+			remoteInfo = "AVCamRemoteApp Watch App";
+		};
+		775B643F2DB526E800E60CF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4F82C91285ADDA2005D427A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 775B64242DB526E600E60CF4;
+			remoteInfo = "AVCamRemoteApp Watch App";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		C47C99C42CA1C6BB00B5338B /* Embed ExtensionKit Extensions */ = {
+		775B64092DB526AD00E60CF4 /* Embed ExtensionKit Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
 			dstSubfolderSpec = 16;
 			files = (
-				C47C99C32CA1C6BB00B5338B /* AVCamCaptureExtension.appex in Embed ExtensionKit Extensions */,
+				775B64032DB526AD00E60CF4 /* AVCamCaptureExtension.appex in Embed ExtensionKit Extensions */,
 			);
 			name = "Embed ExtensionKit Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C4C6E20B2CA1CF270081A8EA /* Embed Foundation Extensions */ = {
+		775B640A2DB526AD00E60CF4 /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				C4C6E20A2CA1CF270081A8EA /* AVCamControlCenterExtension.appex in Embed Foundation Extensions */,
+				775B64062DB526AD00E60CF4 /* AVCamControlCenterExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77EE999A2DB51C6A00F35299 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				77EE99992DB51C6A00F35299 /* (null) in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4171C532FBB2053E055D7336 /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		4171C532FBB2053E055D7336 /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
 		7710E8B4E5AEBAFE7C73EBAA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		B92404E334D9008D3705950F /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+		772EDE432DB7681200BEE3ED /* CameraDeviceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraDeviceListView.swift; sourceTree = "<group>"; };
+		772EDE462DB7682B00BEE3ED /* CameraMonitorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraMonitorView.swift; sourceTree = "<group>"; };
+		775B64252DB526E600E60CF4 /* AVCamRemoteApp Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AVCamRemoteApp Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		775B64342DB526E800E60CF4 /* AVCamRemoteApp Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AVCamRemoteApp Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		775B643E2DB526E800E60CF4 /* AVCamRemoteApp Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AVCamRemoteApp Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77D6D82C2DB529F1006B0BF6 /* FrameCaptureService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameCaptureService.swift; sourceTree = "<group>"; };
+		77EE99A82DB5206100F35299 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		77EE99AB2DB5228C00F35299 /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = System/Library/Frameworks/WatchConnectivity.framework; sourceTree = SDKROOT; };
+		77EE99AD2DB5230D00F35299 /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS11.1.sdk/System/Library/Frameworks/WatchConnectivity.framework; sourceTree = DEVELOPER_DIR; };
+		B92404E334D9008D3705950F /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		C400F45E28DFD8AC00861093 /* ThumbnailButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThumbnailButton.swift; sourceTree = "<group>"; };
 		C400F46228DFDAB700861093 /* FoundationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationExtensions.swift; sourceTree = "<group>"; };
 		C424961E2889CDC400C05256 /* CaptureModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureModeView.swift; sourceTree = "<group>"; };
@@ -177,11 +220,37 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		774A42722DCDED9D0085153C /* Documentation */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Documentation; sourceTree = "<group>"; };
+		775B64262DB526E600E60CF4 /* AVCamRemoteApp Watch App */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "AVCamRemoteApp Watch App"; sourceTree = "<group>"; };
+		775B64372DB526E800E60CF4 /* AVCamRemoteApp Watch AppTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "AVCamRemoteApp Watch AppTests"; sourceTree = "<group>"; };
+		775B64412DB526E800E60CF4 /* AVCamRemoteApp Watch AppUITests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "AVCamRemoteApp Watch AppUITests"; sourceTree = "<group>"; };
 		C47C99BB2CA1C6BB00B5338B /* AVCamCaptureExtension */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (C47C99C72CA1C6BB00B5338B /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = AVCamCaptureExtension; sourceTree = "<group>"; };
 		C4C6E2002CA1CF250081A8EA /* AVCamControlCenterExtension */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (C4C6E20E2CA1CF270081A8EA /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = AVCamControlCenterExtension; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		775B64222DB526E600E60CF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				775B64522DB5272500E60CF4 /* WatchConnectivity.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		775B64312DB526E800E60CF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		775B643B2DB526E800E60CF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C47C99B72CA1C6BB00B5338B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -202,6 +271,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				775B64532DB5274100E60CF4 /* WatchConnectivity.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +284,13 @@
 				4171C532FBB2053E055D7336 /* SampleCode.xcconfig */,
 			);
 			name = Configuration;
+			sourceTree = "<group>";
+		};
+		775B63C02DB5257600E60CF4 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 		C400F46428DFDD4800861093 /* Toolbars */ = {
@@ -290,6 +367,7 @@
 		C47390512BC3464500EC7B9D /* Capture */ = {
 			isa = PBXGroup;
 			children = (
+				77D6D82C2DB529F1006B0BF6 /* FrameCaptureService.swift */,
 				C4E15AB02898660900827683 /* PhotoCapture.swift */,
 				C4EA0DBF2891EFC20085A584 /* MovieCapture.swift */,
 				C472D845285BBFA60082244A /* DeviceLookup.swift */,
@@ -309,6 +387,8 @@
 		C4C6E1FB2CA1CF250081A8EA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				77EE99AB2DB5228C00F35299 /* WatchConnectivity.framework */,
+				77EE99AD2DB5230D00F35299 /* WatchConnectivity.framework */,
 				C4C6E1FC2CA1CF250081A8EA /* WidgetKit.framework */,
 				C4C6E1FE2CA1CF250081A8EA /* SwiftUI.framework */,
 			);
@@ -332,10 +412,15 @@
 				C4F82C9B285ADDA2005D427A /* AVCam */,
 				C47C99BB2CA1C6BB00B5338B /* AVCamCaptureExtension */,
 				C4C6E2002CA1CF250081A8EA /* AVCamControlCenterExtension */,
+				775B64262DB526E600E60CF4 /* AVCamRemoteApp Watch App */,
+				775B64372DB526E800E60CF4 /* AVCamRemoteApp Watch AppTests */,
+				775B64412DB526E800E60CF4 /* AVCamRemoteApp Watch AppUITests */,
 				C4C6E1FB2CA1CF250081A8EA /* Frameworks */,
 				C4F82C9A285ADDA2005D427A /* Products */,
 				12C9517A9E72A121B2E3C5B4 /* Configuration */,
 				FCF92A11B01F69F19EA587A6 /* LICENSE */,
+				774A42722DCDED9D0085153C /* Documentation */,
+				775B63C02DB5257600E60CF4 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -345,6 +430,9 @@
 				C4F82C99285ADDA2005D427A /* AVCam.app */,
 				C47C99BA2CA1C6BB00B5338B /* AVCamCaptureExtension.appex */,
 				C4C6E1FA2CA1CF250081A8EA /* AVCamControlCenterExtension.appex */,
+				775B64252DB526E600E60CF4 /* AVCamRemoteApp Watch App.app */,
+				775B64342DB526E800E60CF4 /* AVCamRemoteApp Watch AppTests.xctest */,
+				775B643E2DB526E800E60CF4 /* AVCamRemoteApp Watch AppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -352,7 +440,10 @@
 		C4F82C9B285ADDA2005D427A /* AVCam */ = {
 			isa = PBXGroup;
 			children = (
+				77EE99A82DB5206100F35299 /* Info.plist */,
 				C4F82C9C285ADDA2005D427A /* AVCamApp.swift */,
+				772EDE432DB7681200BEE3ED /* CameraDeviceListView.swift */,
+				772EDE462DB7682B00BEE3ED /* CameraMonitorView.swift */,
 				C48091832BD584AD00753C4A /* CameraModel.swift */,
 				C4F82CCB285AE206005D427A /* CaptureService.swift */,
 				C4E15AAE2898620E00827683 /* CameraView.swift */,
@@ -381,12 +472,80 @@
 				B92404E334D9008D3705950F /* LICENSE.txt */,
 			);
 			name = LICENSE;
-			path = "";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		775B64242DB526E600E60CF4 /* AVCamRemoteApp Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 775B644F2DB526E800E60CF4 /* Build configuration list for PBXNativeTarget "AVCamRemoteApp Watch App" */;
+			buildPhases = (
+				775B64212DB526E600E60CF4 /* Sources */,
+				775B64222DB526E600E60CF4 /* Frameworks */,
+				775B64232DB526E600E60CF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				774A42722DCDED9D0085153C /* Documentation */,
+				775B64262DB526E600E60CF4 /* AVCamRemoteApp Watch App */,
+			);
+			name = "AVCamRemoteApp Watch App";
+			packageProductDependencies = (
+			);
+			productName = "AVCamRemoteApp Watch App";
+			productReference = 775B64252DB526E600E60CF4 /* AVCamRemoteApp Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		775B64332DB526E800E60CF4 /* AVCamRemoteApp Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 775B64502DB526E800E60CF4 /* Build configuration list for PBXNativeTarget "AVCamRemoteApp Watch AppTests" */;
+			buildPhases = (
+				775B64302DB526E800E60CF4 /* Sources */,
+				775B64312DB526E800E60CF4 /* Frameworks */,
+				775B64322DB526E800E60CF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				775B64362DB526E800E60CF4 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				775B64372DB526E800E60CF4 /* AVCamRemoteApp Watch AppTests */,
+			);
+			name = "AVCamRemoteApp Watch AppTests";
+			packageProductDependencies = (
+			);
+			productName = "AVCamRemoteApp Watch AppTests";
+			productReference = 775B64342DB526E800E60CF4 /* AVCamRemoteApp Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		775B643D2DB526E800E60CF4 /* AVCamRemoteApp Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 775B64512DB526E800E60CF4 /* Build configuration list for PBXNativeTarget "AVCamRemoteApp Watch AppUITests" */;
+			buildPhases = (
+				775B643A2DB526E800E60CF4 /* Sources */,
+				775B643B2DB526E800E60CF4 /* Frameworks */,
+				775B643C2DB526E800E60CF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				775B64402DB526E800E60CF4 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				775B64412DB526E800E60CF4 /* AVCamRemoteApp Watch AppUITests */,
+			);
+			name = "AVCamRemoteApp Watch AppUITests";
+			packageProductDependencies = (
+			);
+			productName = "AVCamRemoteApp Watch AppUITests";
+			productReference = 775B643E2DB526E800E60CF4 /* AVCamRemoteApp Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		C47C99B92CA1C6BB00B5338B /* AVCamCaptureExtension */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C47C99C82CA1C6BB00B5338B /* Build configuration list for PBXNativeTarget "AVCamCaptureExtension" */;
@@ -434,14 +593,18 @@
 				C4F82C95285ADDA2005D427A /* Sources */,
 				C4F82C96285ADDA2005D427A /* Frameworks */,
 				C4F82C97285ADDA2005D427A /* Resources */,
-				C47C99C42CA1C6BB00B5338B /* Embed ExtensionKit Extensions */,
-				C4C6E20B2CA1CF270081A8EA /* Embed Foundation Extensions */,
+				77EE999A2DB51C6A00F35299 /* Embed Watch Content */,
+				775B64092DB526AD00E60CF4 /* Embed ExtensionKit Extensions */,
+				775B640A2DB526AD00E60CF4 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C47C99C22CA1C6BB00B5338B /* PBXTargetDependency */,
-				C4C6E2092CA1CF270081A8EA /* PBXTargetDependency */,
+				775B64052DB526AD00E60CF4 /* PBXTargetDependency */,
+				775B64082DB526AD00E60CF4 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				774A42722DCDED9D0085153C /* Documentation */,
 			);
 			name = AVCam;
 			productName = AVCam;
@@ -456,10 +619,21 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				DefaultBuildSystemTypeForWorkspace = Latest;
-				LastSwiftUpdateCheck = 1600;
+				LastSwiftUpdateCheck = 1610;
 				LastUpgradeCheck = 1600;
 				ORGANIZATIONNAME = Apple;
 				TargetAttributes = {
+					775B64242DB526E600E60CF4 = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					775B64332DB526E800E60CF4 = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = 775B64242DB526E600E60CF4;
+					};
+					775B643D2DB526E800E60CF4 = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = 775B64242DB526E600E60CF4;
+					};
 					C47C99B92CA1C6BB00B5338B = {
 						CreatedOnToolsVersion = 16.0;
 					};
@@ -471,7 +645,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C4F82C94285ADDA2005D427A /* Build configuration list for PBXProject "AVCam" */;
+			buildConfigurationList = C4F82C94285ADDA2005D427A /* Build configuration list for PBXProject "Composa" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -487,11 +661,35 @@
 				C4F82C98285ADDA2005D427A /* AVCam */,
 				C47C99B92CA1C6BB00B5338B /* AVCamCaptureExtension */,
 				C4C6E1F92CA1CF250081A8EA /* AVCamControlCenterExtension */,
+				775B64242DB526E600E60CF4 /* AVCamRemoteApp Watch App */,
+				775B64332DB526E800E60CF4 /* AVCamRemoteApp Watch AppTests */,
+				775B643D2DB526E800E60CF4 /* AVCamRemoteApp Watch AppUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		775B64232DB526E600E60CF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		775B64322DB526E800E60CF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		775B643C2DB526E800E60CF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C47C99B82CA1C6BB00B5338B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -518,6 +716,27 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		775B64212DB526E600E60CF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		775B64302DB526E800E60CF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		775B643A2DB526E800E60CF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C47C99B62CA1C6BB00B5338B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -531,6 +750,7 @@
 				C4C553202CA1D5A3005D940C /* FoundationExtensions.swift in Sources */,
 				C4C553212CA1D5A3005D940C /* PhotoCapture.swift in Sources */,
 				C4C553222CA1D5A3005D940C /* PreviewCameraModel.swift in Sources */,
+				77D6D82E2DB529F1006B0BF6 /* FrameCaptureService.swift in Sources */,
 				C4C553232CA1D5A3005D940C /* CameraPreview.swift in Sources */,
 				C4A73CA02CC0748800C2FA84 /* CameraState.swift in Sources */,
 				C4C553242CA1D5A3005D940C /* FeatureToolbar.swift in Sources */,
@@ -549,6 +769,8 @@
 				C4C553312CA1D5A3005D940C /* SPCObserver.swift in Sources */,
 				C4C553322CA1D5A3005D940C /* CaptureButton.swift in Sources */,
 				C4C553332CA1D5A3005D940C /* StatusOverlayView.swift in Sources */,
+				772EDE452DB7681200BEE3ED /* CameraDeviceListView.swift in Sources */,
+				772EDE472DB7682B00BEE3ED /* CameraMonitorView.swift in Sources */,
 				C4C6E2142CA1D01A0081A8EA /* AVCamCaptureIntent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -577,6 +799,7 @@
 				C480918B2BD59D7D00753C4A /* SPCObserver.swift in Sources */,
 				C4F82CCC285AE206005D427A /* CaptureService.swift in Sources */,
 				C4F82C9D285ADDA2005D427A /* AVCamApp.swift in Sources */,
+				77D6D82D2DB529F1006B0BF6 /* FrameCaptureService.swift in Sources */,
 				C4EA0DCB289205C10085A584 /* FeatureToolbar.swift in Sources */,
 				C472D84F285BDFA60082244A /* MainToolbar.swift in Sources */,
 				C4A73CA12CC0748800C2FA84 /* CameraState.swift in Sources */,
@@ -595,6 +818,8 @@
 				C400F46328DFDAB700861093 /* FoundationExtensions.swift in Sources */,
 				C475973128A71BEC00D1D029 /* CaptureButton.swift in Sources */,
 				C4518410289C5FD700B35C89 /* ViewExtensions.swift in Sources */,
+				772EDE442DB7681200BEE3ED /* CameraDeviceListView.swift in Sources */,
+				772EDE482DB7682B00BEE3ED /* CameraMonitorView.swift in Sources */,
 				C4DFD84628C3ED3D005B74F0 /* StatusOverlayView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -602,19 +827,193 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C47C99C22CA1C6BB00B5338B /* PBXTargetDependency */ = {
+		775B64052DB526AD00E60CF4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C47C99B92CA1C6BB00B5338B /* AVCamCaptureExtension */;
-			targetProxy = C47C99C12CA1C6BB00B5338B /* PBXContainerItemProxy */;
+			targetProxy = 775B64042DB526AD00E60CF4 /* PBXContainerItemProxy */;
 		};
-		C4C6E2092CA1CF270081A8EA /* PBXTargetDependency */ = {
+		775B64082DB526AD00E60CF4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C4C6E1F92CA1CF250081A8EA /* AVCamControlCenterExtension */;
-			targetProxy = C4C6E2082CA1CF270081A8EA /* PBXContainerItemProxy */;
+			targetProxy = 775B64072DB526AD00E60CF4 /* PBXContainerItemProxy */;
+		};
+		775B64362DB526E800E60CF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 775B64242DB526E600E60CF4 /* AVCamRemoteApp Watch App */;
+			targetProxy = 775B64352DB526E800E60CF4 /* PBXContainerItemProxy */;
+		};
+		775B64402DB526E800E60CF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 775B64242DB526E600E60CF4 /* AVCamRemoteApp Watch App */;
+			targetProxy = 775B643F2DB526E800E60CF4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		775B64492DB526E800E60CF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AVCamRemoteApp Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = ZQXV2YB52C;
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = AVCamRemoteApp;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.example.AVCamCodeSample;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.AVCamCodeSample.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.1;
+			};
+			name = Debug;
+		};
+		775B644A2DB526E800E60CF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AVCamRemoteApp Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = ZQXV2YB52C;
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = AVCamRemoteApp;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.example.AVCamCodeSample;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.AVCamCodeSample.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 11.1;
+			};
+			name = Release;
+		};
+		775B644B2DB526E800E60CF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZQXV2YB52C;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.AVCamCodeSample.AVCamRemote.AVCamRemoteApp-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AVCamRemoteApp Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AVCamRemoteApp Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.1;
+			};
+			name = Debug;
+		};
+		775B644C2DB526E800E60CF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZQXV2YB52C;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.AVCamCodeSample.AVCamRemote.AVCamRemoteApp-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AVCamRemoteApp Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AVCamRemoteApp Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 11.1;
+			};
+			name = Release;
+		};
+		775B644D2DB526E800E60CF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZQXV2YB52C;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.AVCamCodeSample.AVCamRemote.AVCamRemoteApp-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "AVCamRemoteApp Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.1;
+			};
+			name = Debug;
+		};
+		775B644E2DB526E800E60CF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZQXV2YB52C;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.AVCamCodeSample.AVCamRemote.AVCamRemoteApp-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "AVCamRemoteApp Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 11.1;
+			};
+			name = Release;
+		};
 		C47C99C52CA1C6BB00B5338B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4171C532FBB2053E055D7336 /* SampleCode.xcconfig */;
@@ -623,7 +1022,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = ZQXV2YB52C;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -641,7 +1040,7 @@
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.AVCam${SAMPLE_CODE_DISAMBIGUATOR}.AVCamCaptureExtension";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.AVCamCodeSample.AVCamCaptureExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
@@ -665,7 +1064,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = ZQXV2YB52C;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -683,7 +1082,7 @@
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.AVCam${SAMPLE_CODE_DISAMBIGUATOR}.AVCamCaptureExtension";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.AVCamCodeSample.AVCamCaptureExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
@@ -709,7 +1108,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = ZQXV2YB52C;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -724,7 +1123,7 @@
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.AVCam${SAMPLE_CODE_DISAMBIGUATOR}.AVCamControlCenterExtension";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.AVCamCodeSample.AVCamControlCenterExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
@@ -750,7 +1149,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = ZQXV2YB52C;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -765,7 +1164,7 @@
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.AVCam${SAMPLE_CODE_DISAMBIGUATOR}.AVCamControlCenterExtension";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.AVCamCodeSample.AVCamControlCenterExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
@@ -915,12 +1314,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"AVCam/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = ZQXV2YB52C;
 				ENABLE_HARDENED_RUNTIME = YES;
 				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AVCam/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.photography";
 				INFOPLIST_KEY_NSCameraUsageDescription = "To capture photos and videos.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "AVCam uses your location to tag where photos and videos are taken.";
@@ -938,7 +1338,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.AVCam${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.AVCamCodeSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
@@ -964,12 +1364,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"AVCam/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = ZQXV2YB52C;
 				ENABLE_HARDENED_RUNTIME = YES;
 				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AVCam/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.photography";
 				INFOPLIST_KEY_NSCameraUsageDescription = "To capture photos and videos.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "AVCam uses your location to tag where photos and videos are taken.";
@@ -987,7 +1388,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.AVCam${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.AVCamCodeSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
@@ -1005,6 +1406,33 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		775B644F2DB526E800E60CF4 /* Build configuration list for PBXNativeTarget "AVCamRemoteApp Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				775B64492DB526E800E60CF4 /* Debug */,
+				775B644A2DB526E800E60CF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		775B64502DB526E800E60CF4 /* Build configuration list for PBXNativeTarget "AVCamRemoteApp Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				775B644B2DB526E800E60CF4 /* Debug */,
+				775B644C2DB526E800E60CF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		775B64512DB526E800E60CF4 /* Build configuration list for PBXNativeTarget "AVCamRemoteApp Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				775B644D2DB526E800E60CF4 /* Debug */,
+				775B644E2DB526E800E60CF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C47C99C82CA1C6BB00B5338B /* Build configuration list for PBXNativeTarget "AVCamCaptureExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1023,7 +1451,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C4F82C94285ADDA2005D427A /* Build configuration list for PBXProject "AVCam" */ = {
+		C4F82C94285ADDA2005D427A /* Build configuration list for PBXProject "Composa" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C4F82CBC285ADDA4005D427A /* Debug */,

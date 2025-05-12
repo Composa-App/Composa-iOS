@@ -18,7 +18,7 @@
                BlueprintIdentifier = "C47C99B92CA1C6BB00B5338B"
                BuildableName = "AVCamCaptureExtension.appex"
                BlueprintName = "AVCamCaptureExtension"
-               ReferencedContainer = "container:AVCam.xcodeproj">
+               ReferencedContainer = "container:Composa.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -32,7 +32,7 @@
                BlueprintIdentifier = "C4F82C98285ADDA2005D427A"
                BuildableName = "AVCam.app"
                BlueprintName = "AVCam"
-               ReferencedContainer = "container:AVCam.xcodeproj">
+               ReferencedContainer = "container:Composa.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -50,7 +50,7 @@
       selectedDebuggerIdentifier = ""
       selectedLauncherIdentifier = "Xcode.IDEFoundation.Launcher.PosixSpawn"
       launchStyle = "0"
-      askForAppToLaunch = "YES"
+      askForAppToLaunch = "Yes"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
@@ -64,7 +64,7 @@
             BlueprintIdentifier = "C4F82C98285ADDA2005D427A"
             BuildableName = "AVCam.app"
             BlueprintName = "AVCam"
-            ReferencedContainer = "container:AVCam.xcodeproj">
+            ReferencedContainer = "container:Composa.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -74,8 +74,8 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES"
-      launchAutomaticallySubstyle = "2"
-      askForAppToLaunch = "YES">
+      askForAppToLaunch = "Yes"
+      launchAutomaticallySubstyle = "2">
       <BuildableProductRunnable
          runnableDebuggingMode = "0">
          <BuildableReference
@@ -83,7 +83,7 @@
             BlueprintIdentifier = "C4F82C98285ADDA2005D427A"
             BuildableName = "AVCam.app"
             BlueprintName = "AVCam"
-            ReferencedContainer = "container:AVCam.xcodeproj">
+            ReferencedContainer = "container:Composa.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
