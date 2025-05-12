@@ -1,5 +1,5 @@
 /*
-See the LICENSE.txt file for this sample’s licensing information.
+See the LICENSE.txt file for this sample's licensing information.
 
 Abstract:
 An object that provides the interface to the features of the camera.
@@ -7,7 +7,7 @@ An object that provides the interface to the features of the camera.
 
 import SwiftUI
 import Combine
-
+import AVFoundation
 /// An object that provides the interface to the features of the camera.
 ///
 /// This object provides the default implementation of the `Camera` protocol, which defines the interface
@@ -63,7 +63,7 @@ final class CameraModel: Camera {
     }
     
     // MARK: - Starting the camera
-    /// Start the camera and begin the stream of data.
+    /// Start the camera and begin the stream of data using the persistent camera state.
     func start() async {
         // Verify that the person authorizes the app to use device cameras and microphones.
         guard await captureService.isAuthorized else {
@@ -75,6 +75,26 @@ final class CameraModel: Camera {
             await syncState()
             // Start the capture service to start the flow of data.
             try await captureService.start(with: cameraState)
+            observeState()
+            status = .running
+        } catch {
+            logger.error("Failed to start capture service. \(error)")
+            status = .failed
+        }
+    }
+
+    /// Start the camera and begin the stream of data with a user-selected device.
+    func startWith(device: AVCaptureDevice) async {
+        // Verify that the person authorizes the app to use device cameras and microphones.
+        guard await captureService.isAuthorized else {
+            status = .unauthorized
+            return
+        }
+        do {
+            // Synchronize the state of the model with the persistent state.
+            await syncState()
+            // Start the capture service to start the flow of data with the selected device.
+            try await captureService.startWith(device: device, state: cameraState)
             observeState()
             status = .running
         } catch {
@@ -95,6 +115,10 @@ final class CameraModel: Camera {
     }
     
     // MARK: - Changing modes and devices
+    /// Selects the given video device for capture.
+    func selectDevice(_ device: AVCaptureDevice) async {
+        await captureService.selectVideoDevice(device)
+    }
     
     /// A value that indicates the mode of capture for the camera.
     var captureMode = CaptureMode.photo {
@@ -228,6 +252,15 @@ final class CameraModel: Camera {
                 withAnimation {
                     // Prefer showing a minimized UI when capture controls enter a fullscreen appearance.
                     prefersMinimizedUI = isShowingFullscreenControls
+                }
+            }
+        }
+        
+        Task {
+            // Observe interruption state
+            for await isInterrupted in await captureService.$isInterrupted.values {
+                if isInterrupted {
+                    status = .disconnected
                 }
             }
         }

@@ -9,19 +9,19 @@ import SwiftUI
 import WidgetKit
 import AppIntents
 
-struct AVCamControlCenterExtension: ControlWidget {
+struct ComposaControlCenterExtension: ControlWidget {
     
     static var kind = "com.example.apple-samplecode.AVCam.AVCamControlCenterExtension.ControlButton"
     static var displayName: LocalizedStringResource = "Open AVCam"
     static var description: LocalizedStringResource = "Launch AVCam app."
     
     var body: some ControlWidgetConfiguration {
-        StaticControlConfiguration(kind: AVCamControlCenterExtension.kind) {
+        StaticControlConfiguration(kind: ComposaControlCenterExtension.kind) {
             ControlWidgetButton(action: AVCamCaptureIntent()) {
                 Label("Open AVCam", systemImage: "curlybraces")
             }
         }
-        .displayName(AVCamControlCenterExtension.displayName)
-        .description(AVCamControlCenterExtension.description)
+        .displayName(ComposaControlCenterExtension.displayName)
+        .description(ComposaControlCenterExtension.description)
     }
 }

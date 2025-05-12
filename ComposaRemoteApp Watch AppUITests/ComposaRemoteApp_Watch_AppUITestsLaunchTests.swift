@@ -1,6 +1,6 @@
 //
-//  AVCamRemoteApp_Watch_AppUITestsLaunchTests.swift
-//  AVCamRemoteApp Watch AppUITests
+//  ComposaRemoteApp_Watch_AppUITestsLaunchTests.swift
+//  ComposaRemoteApp Watch AppUITests
 //
 //  Created by Samuel Alake on 4/20/25.
 //  Copyright © 2025 Apple. All rights reserved.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-final class AVCamRemoteApp_Watch_AppUITestsLaunchTests: XCTestCase {
+final class ComposaRemoteApp_Watch_AppUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

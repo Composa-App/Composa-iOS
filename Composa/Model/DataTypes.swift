@@ -21,6 +21,8 @@ enum CameraStatus {
     case running
     /// A status that indicates higher-priority media processing is interrupting the camera.
     case interrupted
+    /// A status that indicates the external camera has been disconnected.
+    case disconnected
 }
 
 /// An enumeration that defines the activity states the capture service supports.

@@ -1,6 +1,6 @@
 //
-//  AVCamRemoteApp_Watch_AppUITests.swift
-//  AVCamRemoteApp Watch AppUITests
+//  ComposaRemoteApp_Watch_AppUITests.swift
+//  ComposaRemoteApp Watch AppUITests
 //
 //  Created by Samuel Alake on 4/20/25.
 //  Copyright © 2025 Apple. All rights reserved.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-final class AVCamRemoteApp_Watch_AppUITests: XCTestCase {
+final class ComposaRemoteApp_Watch_AppUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
