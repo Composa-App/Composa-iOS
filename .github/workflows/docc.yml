@@ -1,0 +1,77 @@
+name: DocC
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-docs:
+    runs-on: macos-latest # DocC generation requires macOS
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Swift
+        uses: swift-actions/setup-swift@v1
+        with:
+          swift-version: '5.8' # Specify your project's Swift version
+
+      - name: Generate DocC documentation archive
+        id: generate_docc_archive
+        run: |
+          xcodebuild docbuild -scheme Composa \
+            -destination 'generic/platform=iOS' \
+            OTHER_CFLAGS="-Wno-error=unused-label -Wno-error=unused-variable"
+          # Find the .doccarchive path
+          # It's typically in DerivedData/Composa-<BUILD_UID>/Build/Products/Debug-iphoneos/Composa.doccarchive
+          # A more robust way to find it:
+          derived_data_path=$(xcodebuild -showBuildSettings -scheme Composa -destination 'generic/platform=iOS' | grep -m 1 "BUILT_PRODUCTS_DIR" | awk '{print $3}')
+          doccarchive_path="${derived_data_path}/Composa.doccarchive"
+          echo "DocC archive path: ${doccarchive_path}"
+          echo "docc_archive_path=${doccarchive_path}" >> $GITHUB_OUTPUT
+
+      - name: Convert .doccarchive to HTML
+        run: |
+          mkdir public
+          docc_path=$(xcrun --find docc)
+          echo "Found docc at: ${docc_path}"
+          ${docc_path} process-archive "${{ steps.generate_docc_archive.outputs.docc_archive_path }}" --output-path public
+          echo "Successfully converted archive to HTML in ./public"
+
+      - name: Create .nojekyll file
+        run: touch public/.nojekyll
+
+      - name: Upload HTML documentation
+        uses: actions/upload-artifact@v3
+        with:
+          name: ComposaDocCHTML
+          path: public
+
+  deploy-docs:
+    needs: build-docs
+    runs-on: ubuntu-latest # Deployment can run on Linux
+    permissions:
+      contents: write # Required to push to the main branch's docs folder
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3 # Checks out the main branch by default
+
+      - name: Download HTML documentation
+        uses: actions/download-artifact@v3
+        with:
+          name: ComposaDocCHTML
+          path: public # Download to a 'public' directory in the runner
+
+      - name: Deploy to GitHub Pages (docs folder on main branch)
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public # The directory containing the HTML output
+          # publish_branch: main # Not needed, defaults to current branch if destination_dir is set
+          destination_dir: docs # Deploy to the 'docs' subdirectory on the main branch
+          # keep_files: false # Default: old files in destination_dir are removed
+          # allow_empty_commit: false # Default
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          commit_message: 'Deploy DocC documentation to docs folder'
